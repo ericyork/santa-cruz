@@ -1,5 +1,5 @@
 /*-- Defaults --*/
-html, body, main, section, div, article, aside, figure, figcaption, image, iframe, h1, h2, h3, h4, h5, h6, p, table {
+html, body, main, section, header, div, article, aside, figure, figcaption, image, iframe, h1, h2, h3, h4, h5, h6, p, table {
   margin: 0;
   padding: 0;
 }
@@ -71,7 +71,10 @@ body {
 main {
   padding: 0 1em;
 }
-
+header img {
+  width: 100%;
+  height: auto;
+}
 /*-- Media Queries --*/
 @media screen and (min-width: 550px) {
   body {width: 98vw;}
