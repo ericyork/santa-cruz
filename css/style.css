@@ -192,8 +192,6 @@ footer {
 @media screen and (min-width: 1280px) {
   body {width: 80vw;}
   blockquote {width: 33vw;}
-  section.odd {grid-template-columns: 8fr 4fr;}
-  section.even {grid-template-columns: 4fr 8fr;}
 }
 @media screen and (min-width: 1440px) {
   body {width: 78vw;}
