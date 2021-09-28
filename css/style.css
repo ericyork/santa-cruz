@@ -27,7 +27,7 @@ body {
   font-family: var(--font);
   padding: 2rem 0;
 }
-.main-nav, h1, h2, h3, h4, h5, h6, .btn, .custom, blockquote {
+.main-nav, h1, h2, h3, h4, h5, h6, .btn, blockquote {
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 1px;
 }
@@ -186,13 +186,13 @@ footer {
 @media screen and (min-width: 768px) {
   body {width: 86vw;}
   blockquote {width: 50vw;}
-  .glass-outer {order: inherit;}
 }
 @media screen and (min-width: 990px) {
   body {width: 84vw;}
   .main-nav {flex-direction: row; justify-content: space-between;}
   section.odd {grid-template-columns: 1fr 1fr;}
   section.even {grid-template-columns: 1fr 1fr;}
+  .glass-outer {order: inherit;}
 }
 @media screen and (min-width: 1280px) {
   body {width: 80vw;}
