@@ -1,28 +1,29 @@
-/*-- Defaults --*/
-html, body, main, section, header, div, article, aside, figure, figcaption, image, iframe, h1, h2, h3, h4, h5, h6, p, table, blockquote {
-  margin: 0;
-  padding: 0;
-}
-/*-- primary variables --*/
+/*-- primary variables--*/
 :root {
   --background: #171717;
+  --image: url("../img/bubbles.svg");
+  --section: transparent;
   --button: #272727;
   --text: #e9e9e9;
   --accent: #18C4F7;
   --dk-acc: #00A0D0;
   --reg: all .3s ease-in-out;
+  --hfont: 'Luckiest Guy', cursive;
   --font: 'Fira Sans', sans-serif;
   font-size: 62.5%;
-}
-/*-- alternate variables
+} 
+/*-- alternate variables 
 :root {
   --background: #e9e9e9;
+  --image: url("../img/bubbles-alt.svg");
+  --section: #e9e9e9;
   --button: #d1d1d1;
-  --text: #171717;
-  --accent: #18C4F7;
-  --dk-acc: #00A0D0;
+  --text: #272727;
+  --accent: #d50000;
+  --dk-acc: #970000;
   --reg: all .3s ease-in-out;
-  --font: 'Fira Sans', sans-serif;
+  --hfont: system-ui;
+  --font: 'Georgia', serif;
   font-size: 62.5%;
 }--*/
 ::selection {
@@ -31,19 +32,19 @@ html, body, main, section, header, div, article, aside, figure, figcaption, imag
 }
 body {
   color: var(--text);
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 98vw;
   margin: auto;
-  line-height: 1.3;
-  font-weight: 500;
+  font-weight: 400;
   font-family: var(--font);
+  line-height: 1.5;
   padding: 2rem 0;
 }
 img {
   border-radius: .5rem;
 }
 .main-nav, h1, h2, h3, h4, h5, h6, .btn, blockquote {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: var(--hfont);
   letter-spacing: 1px;
 }
 p {
@@ -52,7 +53,7 @@ p {
 /* -- Document --*/
 body {
   background: var(--background);
-  background-image: url("../img/bubbles.svg"); /*-- N.B. the ../ in the file/path --*/
+  background-image: var(--image);
 }
 .main-nav {
   background: var(--background);
@@ -71,6 +72,7 @@ body {
 .brand h1 {
   padding-top: 1.2rem;
   padding-left: 1.2rem;
+  font-size: 2.4rem
 }
 .nav-links {
   padding-top: 1.2rem;
@@ -141,14 +143,15 @@ section {
   display: grid;
   grid-gap: 3.2rem;
   margin: 3rem auto;
-  /* frosted glass effect */
-  /* padding: .4rem;
+  background-color: var(--section);
+  /* frosted glass effect 
+  padding: .4rem;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 16px 0 rgba(167, 167, 167, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: .5rem;
-  border: 1px solid rgba(255, 255, 255, 0.18); */
+  border: 1px solid rgba(255, 255, 255, 0.18);*/
 }
 section.odd {
   grid-template-columns: 1fr;
@@ -161,9 +164,10 @@ section.even {
   flex-direction: column;
   justify-content: center;
 }
-h3 {
+h2 {
   color: var(--accent);
   align-self: flex-start;
+  font-size: 2.4rem;
 }
 .glass-outer {
   order: 1;
